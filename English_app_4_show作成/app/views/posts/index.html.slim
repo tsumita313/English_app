@@ -1,0 +1,5 @@
+.about-backgraund
+    .square-base
+        .square
+        - @posts.each do |post|
+            = link_to(post.content, "/posts/#{post.id}")
