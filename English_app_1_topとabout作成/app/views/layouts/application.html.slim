@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title
+      | EnglishApp1
+    meta[name="viewport" content="width=device-width,initial-scale=1"]
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    = javascript_importmap_tags
+
+  body
+  header
+  .header-a
+    .header-logo
+      = link_to("top", "/")
+    .header-menus
+      ul type="none"
+        li = link_to("英語日記について", "/about")
+        li たぬき
+        li キツネ
+
+  
+    = yield
